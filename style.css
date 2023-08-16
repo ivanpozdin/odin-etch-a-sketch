@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  gap: 30px;
+}
+
+.forms-container {
+  display: flex;
+  gap: 50px;
+  color: #fff;
+  font-family: "Barriecito", sans-serif, cursive;
+  font-size: 30px;
+}
+
+.forms-container form,
+.forms-container .circle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+output {
+  color: white;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vmin;
+  aspect-ratio: 1 / 1;
+}
+.board-row {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.board-column {
+  flex: 1;
+  /* background-color: blanchedalmond; */
+  background-color: white;
+
+  border: 1px pink dotted;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  padding: 0;
+}
+
+.filled {
+  background-color: black;
+}
+
+#input-size {
+  color: white;
+  background-color: black;
+  border: none;
+  width: 200px;
+  height: 70px;
+  font-size: 2rem;
+  text-align: center;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+#input-color {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#input-color::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+#circle-random-colors {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+
+.chosen-color {
+  border-bottom: 2px dotted white !important;
+}
+
+.forms-container label {
+  border-bottom: 2px solid transparent;
+  box-sizing: border-box;
+}
